@@ -5,8 +5,8 @@
       "key": "isa",
       "label": "ISA",
       "principal": 75000000,
-      "valuation": 63859493,
-      "rate": -14.854009333333334,
+      "valuation": 63839837,
+      "rate": -14.880217333333334,
       "dividend": 761442,
       "rows": [
         {
@@ -47,8 +47,8 @@
       "key": "pension",
       "label": "PEN",
       "principal": 11000000,
-      "valuation": 11847813,
-      "rate": 7.707390909090909,
+      "valuation": 11847858,
+      "rate": 7.7078,
       "dividend": 1467,
       "rows": [
         {
@@ -72,9 +72,9 @@
   ],
   "my": {
     "principal": 86000000,
-    "valuation": 75707306,
-    "rate": -11.968248837209302,
+    "valuation": 75687695,
+    "rate": -11.991052325581396,
     "dividend": 762909
   },
-  "updated_at": "2026-09-30T14:23:38.169502"
+  "updated_at": "2026-09-30T14:28:30.886670"
 }
