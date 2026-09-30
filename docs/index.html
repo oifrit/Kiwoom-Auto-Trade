@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>배당투자 현황</title>
+<style>
+  :root {
+    --page-bg: #eef1f0;
+    --header-bg: #1a6b3c;
+    --account-bg: #238c56;
+    --my-bg: #0f4127;
+    --wife-bg: #8a9a92;
+    --card-bg: #ffffff;
+    --card-border: #d8ddda;
+    --row-alt: #f4f7f5;
+    --text-dim: #777;
+    --text-muted: #aaa;
+    --tag-color: #b8860b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page-bg);
+    font-family: "Malgun Gothic", "맑은 고딕", -apple-system, sans-serif;
+    color: #222;
+    padding: 20px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  .titlebar {
+    background: var(--header-bg);
+    border-radius: 6px 6px 0 0;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .titlebar h1 { margin: 0; font-size: 16px; color: #fff; font-weight: bold; }
+  .subtitle {
+    padding: 6px 16px;
+    font-size: 12px;
+    color: var(--text-dim);
+    background: var(--page-bg);
+  }
+  .summary-bar {
+    border-radius: 6px;
+    margin-bottom: 12px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .summary-bar.my { background: var(--my-bg); }
+  .summary-bar .label { font-size: 15px; font-weight: bold; color: #fff; min-width: 32px; }
+  .summary-bar .figures { font-family: Consolas, monospace; font-size: 13px; font-weight: bold; color: #d9ecdf; }
+  .account-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .account-card .head {
+    background: var(--account-bg);
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .account-card .head.wife { background: var(--wife-bg); }
+  .account-card .head .label { font-size: 15px; font-weight: bold; color: #fff; min-width: 32px; }
+  .account-card .head .figures { font-family: Consolas, monospace; font-size: 12px; font-weight: bold; color: #d9ecdf; }
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    font-size: 12px;
+    color: #888;
+    font-weight: bold;
+    padding: 8px 10px 4px;
+    text-align: center;
+  }
+  thead th:nth-child(2) { text-align: left; }
+  thead th:nth-child(3), thead th:nth-child(4), thead th:nth-child(5) { text-align: right; }
+  tbody td {
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  tbody td:nth-child(2) { text-align: left; font-family: "Malgun Gothic", "맑은 고딕", sans-serif; }
+  tbody td:nth-child(3), tbody td:nth-child(4), tbody td:nth-child(5) { text-align: right; }
+  tbody tr:nth-child(odd) { background: var(--card-bg); }
+  tbody tr:nth-child(even) { background: var(--row-alt); }
+  .per-share-tag { color: var(--tag-color); font-size: 11px; font-family: "Malgun Gothic", "맑은 고딕", sans-serif; }
+  .empty-row td { text-align: center; color: var(--text-muted); font-family: "Malgun Gothic", "맑은 고딕", sans-serif; padding: 12px; }
+  .wife-note { padding: 14px 16px; color: var(--text-muted); font-size: 13px; }
+  .loading { padding: 20px; text-align: center; color: var(--text-dim); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="titlebar">
+    <h1>배당투자 현황</h1>
+  </div>
+  <div class="subtitle" id="subtitle">불러오는 중...</div>
+  <div id="body"><div class="loading">불러오는 중...</div></div>
+</div>
+
+<script>
+const DISPLAY_LABEL = { isa: "ISA", pension: "PEN" };
+
+function fmtInt(n) {
+  return Math.round(n).toLocaleString("ko-KR");
+}
+
+function fmtRate(rate) {
+  if (rate === null || rate === undefined) return "-";
+  const sign = rate >= 0 ? "+" : "";
+  return `${sign}${rate.toFixed(1)}%`;
+}
+
+function summaryFigures(section) {
+  return `원금 ${fmtInt(section.principal)}  /  평가금 ${fmtInt(section.valuation)}  /  `
+       + `수익율 ${fmtRate(section.rate)}  /  예상분배금 ${fmtInt(section.dividend)}`;
+}
+
+function renderSummaryBar(label, section) {
+  const div = document.createElement("div");
+  div.className = "summary-bar my";
+  div.innerHTML = `<span class="label">${label}</span><span class="figures">${summaryFigures(section)}</span>`;
+  return div;
+}
+
+function renderAccountCard(acc) {
+  const card = document.createElement("div");
+  card.className = "account-card";
+
+  const head = document.createElement("div");
+  head.className = "head";
+  head.innerHTML = `<span class="label">${acc.label}</span><span class="figures">${summaryFigures(acc)}</span>`;
+  card.appendChild(head);
+
+  const table = document.createElement("table");
+  const thead = document.createElement("thead");
+  thead.innerHTML = "<tr><th>종목코드</th><th>종목명</th><th>수량</th><th>주당분배금</th><th>합계</th></tr>";
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+  if (!acc.rows.length) {
+    const tr = document.createElement("tr");
+    tr.className = "empty-row";
+    tr.innerHTML = `<td colspan="5">보유종목 없음</td>`;
+    tbody.appendChild(tr);
+  } else {
+    for (const row of acc.rows) {
+      let tag = "";
+      if (!row.confirmed) tag = row.per_share > 0 ? "(예상)" : "(미확인)";
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${row.stk_cd}</td>
+        <td>${row.name}</td>
+        <td>${fmtInt(row.qty)}</td>
+        <td>${fmtInt(row.per_share)} <span class="per-share-tag">${tag}</span></td>
+        <td>${fmtInt(row.total)}</td>`;
+      tbody.appendChild(tr);
+    }
+  }
+  table.appendChild(tbody);
+  card.appendChild(table);
+  return card;
+}
+
+function renderWifePlaceholder() {
+  const card = document.createElement("div");
+  card.className = "account-card";
+  const head = document.createElement("div");
+  head.className = "head wife";
+  head.innerHTML = `<span class="label">아내</span>`;
+  card.appendChild(head);
+  const note = document.createElement("div");
+  note.className = "wife-note";
+  note.textContent = "계좌 미등록 (한국투자증권 ISA 연동 전 - 추후 추가 예정)";
+  card.appendChild(note);
+  return card;
+}
+
+async function load() {
+  const bodyEl = document.getElementById("body");
+  const subtitleEl = document.getElementById("subtitle");
+  try {
+    const resp = await fetch(`data.json?t=${Date.now()}`);
+    if (!resp.ok) throw new Error(`data.json 로드 실패 (${resp.status})`);
+    const report = await resp.json();
+
+    bodyEl.innerHTML = "";
+    bodyEl.appendChild(renderSummaryBar("나", report.my));
+    for (const acc of report.accounts) {
+      acc.label = DISPLAY_LABEL[acc.key] || acc.label;
+      bodyEl.appendChild(renderAccountCard(acc));
+    }
+    bodyEl.appendChild(renderWifePlaceholder());
+
+    const updated = new Date(report.updated_at);
+    subtitleEl.textContent = `갱신시각 ${updated.toLocaleString("ko-KR")}  ·  세전, 미확정 종목은 직전 확정월 값 추정치  ·  원금은 수기입력값`;
+  } catch (e) {
+    subtitleEl.textContent = "";
+    bodyEl.innerHTML = `<div class="loading">불러오기 실패: ${e.message}</div>`;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
