@@ -1,44 +1,44 @@
 {
-  "this_month": "2026-09",
+  "this_month": "2026-10",
   "accounts": [
     {
       "key": "isa",
       "label": "ISA",
       "principal": 75000000,
-      "valuation": 63856308,
-      "rate": -14.858256,
-      "dividend": 761481,
+      "valuation": 65288638,
+      "rate": -12.948482666666667,
+      "dividend": 761279,
       "rows": [
         {
           "stk_cd": "480040",
           "name": "에미반",
           "qty": 1001,
           "per_share": 433,
-          "confirmed": true,
+          "confirmed": false,
           "total": 433433
         },
         {
           "stk_cd": "486290",
           "name": "타미닥",
-          "qty": 2327,
+          "qty": 2322,
           "per_share": 134,
-          "confirmed": true,
-          "total": 311818
+          "confirmed": false,
+          "total": 311148
         },
         {
           "stk_cd": "458730",
           "name": "타미당",
-          "qty": 20,
+          "qty": 32,
           "per_share": 39,
-          "confirmed": true,
-          "total": 780
+          "confirmed": false,
+          "total": 1248
         },
         {
           "stk_cd": "494300",
           "name": "코미닥",
           "qty": 103,
           "per_share": 150,
-          "confirmed": true,
+          "confirmed": false,
           "total": 15450
         }
       ]
@@ -47,24 +47,24 @@
       "key": "pension",
       "label": "PEN",
       "principal": 11000000,
-      "valuation": 11847063,
-      "rate": 7.700572727272727,
-      "dividend": 26586,
+      "valuation": 11871958,
+      "rate": 7.9268909090909085,
+      "dividend": 27444,
       "rows": [
         {
           "stk_cd": "458730",
           "name": "타미당",
-          "qty": 24,
+          "qty": 46,
           "per_share": 39,
-          "confirmed": true,
-          "total": 936
+          "confirmed": false,
+          "total": 1794
         },
         {
           "stk_cd": "494300",
           "name": "코미닥",
           "qty": 171,
           "per_share": 150,
-          "confirmed": true,
+          "confirmed": false,
           "total": 25650
         }
       ]
@@ -72,9 +72,9 @@
   ],
   "my": {
     "principal": 86000000,
-    "valuation": 75703371,
-    "rate": -11.97282441860465,
-    "dividend": 788067
+    "valuation": 77160596,
+    "rate": -10.278376744186046,
+    "dividend": 788723
   },
-  "updated_at": "2026-09-30T15:31:03.200496"
+  "updated_at": "2026-10-01T15:31:05.532740"
 }
