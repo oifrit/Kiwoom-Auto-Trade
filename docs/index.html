@@ -171,17 +171,22 @@ function renderAccountCard(acc) {
   return card;
 }
 
-function renderWifePlaceholder() {
-  const card = document.createElement("div");
-  card.className = "account-card";
-  const head = document.createElement("div");
-  head.className = "head wife";
-  head.innerHTML = `<span class="label">아내</span>`;
-  card.appendChild(head);
-  const note = document.createElement("div");
-  note.className = "wife-note";
-  note.textContent = "계좌 미등록 (한국투자증권 ISA 연동 전 - 추후 추가 예정)";
-  card.appendChild(note);
+function renderWifeCard(wife) {
+  if (!wife) {
+    const card = document.createElement("div");
+    card.className = "account-card";
+    const head = document.createElement("div");
+    head.className = "head wife";
+    head.innerHTML = `<span class="label">아내 ISA(한투)</span>`;
+    card.appendChild(head);
+    const note = document.createElement("div");
+    note.className = "wife-note";
+    note.textContent = "조회 실패(일시적) - 다음 갱신에서 다시 시도됩니다";
+    card.appendChild(note);
+    return card;
+  }
+  const card = renderAccountCard(wife);
+  card.querySelector(".head").classList.add("wife");
   return card;
 }
 
@@ -199,7 +204,7 @@ async function load() {
       acc.label = DISPLAY_LABEL[acc.key] || acc.label;
       bodyEl.appendChild(renderAccountCard(acc));
     }
-    bodyEl.appendChild(renderWifePlaceholder());
+    bodyEl.appendChild(renderWifeCard(report.wife));
 
     const updated = new Date(report.updated_at);
     subtitleEl.textContent = `갱신시각 ${updated.toLocaleString("ko-KR")}  ·  세전, 미확정 종목은 직전 확정월 값 추정치  ·  원금은 수기입력값`;
