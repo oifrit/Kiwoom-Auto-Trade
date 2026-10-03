@@ -76,5 +76,31 @@
     "rate": -10.31946046511628,
     "dividend": 813740
   },
-  "updated_at": "2026-10-03T15:31:04.550284"
+  "wife": {
+    "key": "wife_isa",
+    "label": "아내 ISA(한투)",
+    "principal": 7636305,
+    "valuation": 7518325,
+    "rate": -1.5449880537773177,
+    "dividend": 96933,
+    "rows": [
+      {
+        "stk_cd": "458730",
+        "name": "타미당",
+        "qty": 97,
+        "per_share": 39,
+        "confirmed": false,
+        "total": 3783
+      },
+      {
+        "stk_cd": "494300",
+        "name": "코미닥",
+        "qty": 621,
+        "per_share": 150,
+        "confirmed": false,
+        "total": 93150
+      }
+    ]
+  },
+  "updated_at": "2026-10-03T18:30:00.169845"
 }
