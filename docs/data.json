@@ -78,18 +78,18 @@
   },
   "wife": {
     "my": {
-      "principal": 7000000,
+      "principal": 10000000,
       "valuation": 7518325,
-      "rate": 7.404642857142857,
+      "rate": -24.816750000000003,
       "dividend": 96933
     },
     "accounts": [
       {
         "key": "isa",
         "label": "ISA",
-        "principal": 7000000,
+        "principal": 10000000,
         "valuation": 7518325,
-        "rate": 7.404642857142857,
+        "rate": -24.816750000000003,
         "dividend": 96933,
         "rows": [
           {
@@ -125,5 +125,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-04T19:56:57.226869"
+  "updated_at": "2026-10-04T19:59:46.636692"
 }
