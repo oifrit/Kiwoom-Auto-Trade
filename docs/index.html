@@ -52,6 +52,7 @@
     flex-wrap: wrap;
   }
   .summary-bar.my { background: var(--my-bg); }
+  .summary-bar.wife { background: var(--wife-bg); }
   .summary-bar .label { font-size: 15px; font-weight: bold; color: #fff; min-width: 32px; }
   .summary-bar .figures { font-family: Consolas, monospace; font-size: 13px; font-weight: bold; color: #d9ecdf; }
   .account-card {
@@ -171,23 +172,41 @@ function renderAccountCard(acc) {
   return card;
 }
 
-function renderWifeCard(wife) {
-  if (!wife) {
-    const card = document.createElement("div");
-    card.className = "account-card";
-    const head = document.createElement("div");
-    head.className = "head wife";
-    head.innerHTML = `<span class="label">아내 ISA(한투)</span>`;
-    card.appendChild(head);
-    const note = document.createElement("div");
-    note.className = "wife-note";
-    note.textContent = "조회 실패(일시적) - 다음 갱신에서 다시 시도됩니다";
-    card.appendChild(note);
-    return card;
-  }
-  const card = renderAccountCard(wife);
-  card.querySelector(".head").classList.add("wife");
+function renderWifeErrorCard(label, msg) {
+  const card = document.createElement("div");
+  card.className = "account-card";
+  const head = document.createElement("div");
+  head.className = "head wife";
+  head.innerHTML = `<span class="label">${label}</span>`;
+  card.appendChild(head);
+  const note = document.createElement("div");
+  note.className = "wife-note";
+  note.textContent = msg;
+  card.appendChild(note);
   return card;
+}
+
+function renderWifeSection(wife) {
+  // wife: {"my":{...}, "accounts":[{..., ok, error}, ...]} — 한투 ISA+연금저축 집계(2026-10-04~)
+  const nodes = [];
+  if (!wife) {
+    nodes.push(renderWifeErrorCard("아내(한투)", "조회 실패(일시적) - 다음 갱신에서 다시 시도됩니다"));
+    return nodes;
+  }
+  const summary = renderSummaryBar("아내", wife.my);
+  summary.classList.remove("my");
+  summary.classList.add("wife");
+  nodes.push(summary);
+  for (const acc of wife.accounts) {
+    if (acc.ok === false) {
+      nodes.push(renderWifeErrorCard(acc.label, `조회 실패: ${acc.error}`));
+      continue;
+    }
+    const card = renderAccountCard(acc);
+    card.querySelector(".head").classList.add("wife");
+    nodes.push(card);
+  }
+  return nodes;
 }
 
 async function load() {
@@ -204,7 +223,9 @@ async function load() {
       acc.label = DISPLAY_LABEL[acc.key] || acc.label;
       bodyEl.appendChild(renderAccountCard(acc));
     }
-    bodyEl.appendChild(renderWifeCard(report.wife));
+    for (const node of renderWifeSection(report.wife)) {
+      bodyEl.appendChild(node);
+    }
 
     const updated = new Date(report.updated_at);
     subtitleEl.textContent = `갱신시각 ${updated.toLocaleString("ko-KR")}  ·  세전, 미확정 종목은 직전 확정월 값 추정치  ·  원금은 수기입력값`;
