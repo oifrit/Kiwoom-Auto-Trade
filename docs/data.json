@@ -46,9 +46,9 @@
     {
       "key": "pension",
       "label": "PEN",
-      "principal": 10000000,
-      "valuation": 11925644,
-      "rate": 19.25644,
+      "principal": 28000000,
+      "valuation": 29925644,
+      "rate": 6.8773,
       "dividend": 51444,
       "rows": [
         {
@@ -71,9 +71,9 @@
     }
   ],
   "my": {
-    "principal": 85000000,
-    "valuation": 77125264,
-    "rate": -9.264395294117648,
+    "principal": 103000000,
+    "valuation": 95125264,
+    "rate": -7.645374757281553,
     "dividend": 813740
   },
   "wife": {
@@ -102,5 +102,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-04T15:31:05.319154"
+  "updated_at": "2026-10-04T19:41:12.511954"
 }
