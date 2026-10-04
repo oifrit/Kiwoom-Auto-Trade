@@ -77,30 +77,53 @@
     "dividend": 813740
   },
   "wife": {
-    "key": "wife_isa",
-    "label": "아내 ISA(한투)",
-    "principal": 7000000,
-    "valuation": 7518325,
-    "rate": 7.404642857142857,
-    "dividend": 96933,
-    "rows": [
+    "my": {
+      "principal": 7000000,
+      "valuation": 7518325,
+      "rate": 7.404642857142857,
+      "dividend": 96933
+    },
+    "accounts": [
       {
-        "stk_cd": "458730",
-        "name": "타미당",
-        "qty": 97,
-        "per_share": 39,
-        "confirmed": false,
-        "total": 3783
+        "key": "isa",
+        "label": "ISA",
+        "principal": 7000000,
+        "valuation": 7518325,
+        "rate": 7.404642857142857,
+        "dividend": 96933,
+        "rows": [
+          {
+            "stk_cd": "458730",
+            "name": "타미당",
+            "qty": 97,
+            "per_share": 39,
+            "confirmed": false,
+            "total": 3783
+          },
+          {
+            "stk_cd": "494300",
+            "name": "코미닥",
+            "qty": 621,
+            "per_share": 150,
+            "confirmed": false,
+            "total": 93150
+          }
+        ],
+        "ok": true,
+        "error": null
       },
       {
-        "stk_cd": "494300",
-        "name": "코미닥",
-        "qty": 621,
-        "per_share": 150,
-        "confirmed": false,
-        "total": 93150
+        "key": "pension",
+        "label": "PEN",
+        "principal": 0,
+        "valuation": 0,
+        "rate": null,
+        "dividend": 0,
+        "rows": [],
+        "ok": false,
+        "error": "KIS API 오류 - 잔고조회: OPSQ2000 ERROR : INPUT INVALID_CHECK_ACNO"
       }
     ]
   },
-  "updated_at": "2026-10-04T19:41:12.511954"
+  "updated_at": "2026-10-04T19:56:57.226869"
 }
