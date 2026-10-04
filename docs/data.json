@@ -78,9 +78,9 @@
   },
   "wife": {
     "my": {
-      "principal": 10000000,
-      "valuation": 7518325,
-      "rate": -24.816750000000003,
+      "principal": 28000000,
+      "valuation": 25518325,
+      "rate": -8.863125,
       "dividend": 96933
     },
     "accounts": [
@@ -115,15 +115,15 @@
       {
         "key": "pension",
         "label": "PEN",
-        "principal": 0,
-        "valuation": 0,
-        "rate": null,
+        "principal": 18000000,
+        "valuation": 18000000,
+        "rate": 0.0,
         "dividend": 0,
         "rows": [],
-        "ok": false,
-        "error": "KIS API 오류 - 잔고조회: OPSQ2000 ERROR : INPUT INVALID_CHECK_ACNO"
+        "ok": true,
+        "error": null
       }
     ]
   },
-  "updated_at": "2026-10-04T19:59:46.636692"
+  "updated_at": "2026-10-04T20:11:43.941539"
 }
