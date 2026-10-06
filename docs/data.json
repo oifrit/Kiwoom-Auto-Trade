@@ -5,9 +5,9 @@
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 70528662,
-      "rate": -11.8391725,
-      "dividend": 867477,
+      "valuation": 70481412,
+      "rate": -11.898235,
+      "dividend": 866807,
       "rows": [
         {
           "stk_cd": "480040",
@@ -20,10 +20,10 @@
         {
           "stk_cd": "486290",
           "name": "타미닥",
-          "qty": 2323,
+          "qty": 2318,
           "per_share": 134,
           "confirmed": false,
-          "total": 311282
+          "total": 310612
         },
         {
           "stk_cd": "458730",
@@ -47,17 +47,17 @@
       "key": "pension",
       "label": "PEN",
       "principal": 28000000,
-      "valuation": 29955054,
-      "rate": 6.982335714285714,
-      "dividend": 51444,
+      "valuation": 29956479,
+      "rate": 6.987425,
+      "dividend": 53628,
       "rows": [
         {
           "stk_cd": "458730",
           "name": "타미당",
-          "qty": 46,
+          "qty": 102,
           "per_share": 39,
           "confirmed": false,
-          "total": 1794
+          "total": 3978
         },
         {
           "stk_cd": "494300",
@@ -72,24 +72,24 @@
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 100483716,
-    "rate": -6.959522222222223,
-    "dividend": 918921
+    "valuation": 100437891,
+    "rate": -7.001952777777778,
+    "dividend": 920435
   },
   "wife": {
     "my": {
       "principal": 28000000,
-      "valuation": 25572665,
-      "rate": -8.669053571428572,
-      "dividend": 96933
+      "valuation": 26036945,
+      "rate": -7.010910714285715,
+      "dividend": 98220
     },
     "accounts": [
       {
         "key": "isa",
         "label": "ISA",
         "principal": 10000000,
-        "valuation": 7572665,
-        "rate": -24.27335,
+        "valuation": 7575770,
+        "rate": -24.2423,
         "dividend": 96933,
         "rows": [
           {
@@ -116,14 +116,23 @@
         "key": "pension",
         "label": "PEN",
         "principal": 18000000,
-        "valuation": 18000000,
-        "rate": 0.0,
-        "dividend": 0,
-        "rows": [],
+        "valuation": 18461175,
+        "rate": 2.5620833333333333,
+        "dividend": 1287,
+        "rows": [
+          {
+            "stk_cd": "458730",
+            "name": "타미당",
+            "qty": 33,
+            "per_share": 39,
+            "confirmed": false,
+            "total": 1287
+          }
+        ],
         "ok": true,
         "error": null
       }
     ]
   },
-  "updated_at": "2026-10-06T09:26:24.955685"
+  "updated_at": "2026-10-06T15:31:07.707022"
 }
