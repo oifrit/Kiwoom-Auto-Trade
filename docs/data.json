@@ -5,17 +5,17 @@
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 65199620,
-      "rate": -18.500474999999998,
-      "dividend": 762296,
+      "valuation": 70528662,
+      "rate": -11.8391725,
+      "dividend": 867477,
       "rows": [
         {
           "stk_cd": "480040",
           "name": "에미반",
-          "qty": 1002,
+          "qty": 1105,
           "per_share": 433,
           "confirmed": false,
-          "total": 433866
+          "total": 478465
         },
         {
           "stk_cd": "486290",
@@ -28,18 +28,18 @@
         {
           "stk_cd": "458730",
           "name": "타미당",
-          "qty": 32,
+          "qty": 70,
           "per_share": 39,
           "confirmed": false,
-          "total": 1248
+          "total": 2730
         },
         {
           "stk_cd": "494300",
           "name": "코미닥",
-          "qty": 106,
+          "qty": 500,
           "per_share": 150,
           "confirmed": false,
-          "total": 15900
+          "total": 75000
         }
       ]
     },
@@ -47,8 +47,8 @@
       "key": "pension",
       "label": "PEN",
       "principal": 28000000,
-      "valuation": 29925644,
-      "rate": 6.8773,
+      "valuation": 29955054,
+      "rate": 6.982335714285714,
       "dividend": 51444,
       "rows": [
         {
@@ -72,15 +72,15 @@
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 95125264,
-    "rate": -11.921051851851852,
-    "dividend": 813740
+    "valuation": 100483716,
+    "rate": -6.959522222222223,
+    "dividend": 918921
   },
   "wife": {
     "my": {
       "principal": 28000000,
-      "valuation": 25518325,
-      "rate": -8.863125,
+      "valuation": 25572665,
+      "rate": -8.669053571428572,
       "dividend": 96933
     },
     "accounts": [
@@ -88,8 +88,8 @@
         "key": "isa",
         "label": "ISA",
         "principal": 10000000,
-        "valuation": 7518325,
-        "rate": -24.816750000000003,
+        "valuation": 7572665,
+        "rate": -24.27335,
         "dividend": 96933,
         "rows": [
           {
@@ -125,5 +125,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T15:31:11.695594"
+  "updated_at": "2026-10-06T09:26:24.955685"
 }
