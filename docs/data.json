@@ -15,7 +15,8 @@
           "qty": 1107,
           "per_share": 433,
           "confirmed": false,
-          "total": 479331
+          "total": 479331,
+          "prft_rt": -15.2
         },
         {
           "stk_cd": "486290",
@@ -23,7 +24,8 @@
           "qty": 2320,
           "per_share": 134,
           "confirmed": false,
-          "total": 310880
+          "total": 310880,
+          "prft_rt": -9.96
         },
         {
           "stk_cd": "458730",
@@ -31,7 +33,8 @@
           "qty": 70,
           "per_share": 39,
           "confirmed": false,
-          "total": 2730
+          "total": 2730,
+          "prft_rt": -1.91
         },
         {
           "stk_cd": "494300",
@@ -39,7 +42,8 @@
           "qty": 500,
           "per_share": 150,
           "confirmed": false,
-          "total": 75000
+          "total": 75000,
+          "prft_rt": 0.29
         }
       ]
     },
@@ -57,7 +61,8 @@
           "qty": 158,
           "per_share": 39,
           "confirmed": false,
-          "total": 6162
+          "total": 6162,
+          "prft_rt": -0.29
         },
         {
           "stk_cd": "494300",
@@ -65,7 +70,8 @@
           "qty": 331,
           "per_share": 150,
           "confirmed": false,
-          "total": 49650
+          "total": 49650,
+          "prft_rt": 1.66
         }
       ]
     }
@@ -98,7 +104,8 @@
             "qty": 97,
             "per_share": 39,
             "confirmed": false,
-            "total": 3783
+            "total": 3783,
+            "prft_rt": -2.782608695652178
           },
           {
             "stk_cd": "494300",
@@ -106,7 +113,8 @@
             "qty": 621,
             "per_share": 150,
             "confirmed": false,
-            "total": 93150
+            "total": 93150,
+            "prft_rt": -0.33351862145636346
           }
         ],
         "ok": true,
@@ -126,7 +134,8 @@
             "qty": 67,
             "per_share": 39,
             "confirmed": false,
-            "total": 2613
+            "total": 2613,
+            "prft_rt": 0.0
           }
         ],
         "ok": true,
@@ -134,5 +143,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T15:58:51.625662"
+  "updated_at": "2026-10-07T16:07:49.391128"
 }
