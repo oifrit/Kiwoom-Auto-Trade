@@ -149,14 +149,14 @@ function renderAccountCard(acc) {
 
   const table = document.createElement("table");
   const thead = document.createElement("thead");
-  thead.innerHTML = "<tr><th>종목코드</th><th>종목명</th><th>수량</th><th>주당분배금</th><th>합계</th></tr>";
+  thead.innerHTML = "<tr><th>종목</th><th>수량</th><th>주당분배금</th><th>합계</th></tr>";
   table.appendChild(thead);
 
   const tbody = document.createElement("tbody");
   if (!acc.rows.length) {
     const tr = document.createElement("tr");
     tr.className = "empty-row";
-    tr.innerHTML = `<td colspan="5">보유종목 없음</td>`;
+    tr.innerHTML = `<td colspan="4">보유종목 없음</td>`;
     tbody.appendChild(tr);
   } else {
     for (const row of acc.rows) {
@@ -167,8 +167,7 @@ function renderAccountCard(acc) {
       const rateText = `${rate >= 0 ? "+" : ""}${rate.toFixed(1)}%`;
       const tr = document.createElement("tr");
       tr.innerHTML = `
-        <td>${row.stk_cd}</td>
-        <td>${row.name}<span class="stock-rate" style="color:${rateColor}">${rateText}</span></td>
+        <td>${row.stk_cd} ${row.name}<span class="stock-rate" style="color:${rateColor}">${rateText}</span></td>
         <td>${fmtInt(row.qty)}</td>
         <td>${fmtInt(row.per_share)} <span class="per-share-tag">${tag}</span></td>
         <td>${fmtInt(row.total)}</td>`;
