@@ -18,6 +18,9 @@
     --text-dim: #777;
     --text-muted: #aaa;
     --tag-color: #b8860b;
+    --rate-up: #c0392b;
+    --rate-down: #2d6cc0;
+    --rate-flat: #888;
   }
   * { box-sizing: border-box; }
   body {
@@ -95,6 +98,7 @@
   tbody tr:nth-child(odd) { background: var(--card-bg); }
   tbody tr:nth-child(even) { background: var(--row-alt); }
   .per-share-tag { color: var(--tag-color); font-size: 11px; font-family: "Malgun Gothic", "맑은 고딕", sans-serif; }
+  .stock-rate { font-size: 11px; font-family: Consolas, monospace; margin-left: 6px; }
   .empty-row td { text-align: center; color: var(--text-muted); font-family: "Malgun Gothic", "맑은 고딕", sans-serif; padding: 12px; }
   .wife-note { padding: 14px 16px; color: var(--text-muted); font-size: 13px; }
   .loading { padding: 20px; text-align: center; color: var(--text-dim); }
@@ -158,10 +162,13 @@ function renderAccountCard(acc) {
     for (const row of acc.rows) {
       let tag = "";
       if (!row.confirmed) tag = row.per_share > 0 ? "(예상)" : "(미확인)";
+      const rate = row.prft_rt || 0;
+      const rateColor = rate > 0 ? "var(--rate-up)" : rate < 0 ? "var(--rate-down)" : "var(--rate-flat)";
+      const rateText = `${rate >= 0 ? "+" : ""}${rate.toFixed(1)}%`;
       const tr = document.createElement("tr");
       tr.innerHTML = `
         <td>${row.stk_cd}</td>
-        <td>${row.name}</td>
+        <td>${row.name}<span class="stock-rate" style="color:${rateColor}">${rateText}</span></td>
         <td>${fmtInt(row.qty)}</td>
         <td>${fmtInt(row.per_share)} <span class="per-share-tag">${tag}</span></td>
         <td>${fmtInt(row.total)}</td>`;
