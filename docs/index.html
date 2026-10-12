@@ -127,7 +127,11 @@ function fmtRate(rate) {
 }
 
 function summaryFigures(section) {
-  return `원금 ${fmtInt(section.principal)}  /  평가금 ${fmtInt(section.valuation)}  /  `
+  let valuationStr = fmtInt(section.valuation);
+  if (section.orderable_cash !== undefined && section.orderable_cash !== null) {
+    valuationStr += `(${fmtInt(section.orderable_cash)})`;
+  }
+  return `원금 ${fmtInt(section.principal)}  /  평가금 ${valuationStr}  /  `
        + `수익율 ${fmtRate(section.rate)}  /  예상분배금 ${fmtInt(section.dividend)}`;
 }
 
