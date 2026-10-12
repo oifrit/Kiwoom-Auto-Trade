@@ -85,8 +85,8 @@
   "wife": {
     "my": {
       "principal": 28000000,
-      "valuation": 31261657,
-      "rate": 11.648775,
+      "valuation": 25512369,
+      "rate": -8.884396428571428,
       "dividend": 189972
     },
     "accounts": [
@@ -94,8 +94,8 @@
         "key": "isa",
         "label": "ISA",
         "principal": 10000000,
-        "valuation": 8165860,
-        "rate": -18.3414,
+        "valuation": 7515809,
+        "rate": -24.84191,
         "dividend": 107883,
         "rows": [
           {
@@ -124,8 +124,8 @@
         "key": "pension",
         "label": "PEN",
         "principal": 18000000,
-        "valuation": 23095797,
-        "rate": 28.30998333333333,
+        "valuation": 17996560,
+        "rate": -0.01911111111111111,
         "dividend": 82089,
         "rows": [
           {
@@ -152,5 +152,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T15:35:08.316935"
+  "updated_at": "2026-10-12T15:54:04.290294"
 }
