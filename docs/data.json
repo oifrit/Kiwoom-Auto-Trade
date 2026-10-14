@@ -75,7 +75,7 @@
           "prft_rt": -0.71
         }
       ],
-      "orderable_cash": 12607688
+      "orderable_cash": 12608328
     }
   ],
   "my": {
@@ -86,18 +86,18 @@
   },
   "wife": {
     "my": {
-      "principal": 28000000,
+      "principal": 25000000,
       "valuation": 25452461,
-      "rate": -9.098353571428571,
+      "rate": 1.809844,
       "dividend": 227559
     },
     "accounts": [
       {
         "key": "isa",
         "label": "ISA",
-        "principal": 10000000,
+        "principal": 7000000,
         "valuation": 7479204,
-        "rate": -25.20796,
+        "rate": 6.845771428571429,
         "dividend": 107883,
         "rows": [
           {
@@ -156,5 +156,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-14T15:35:11.714356"
+  "updated_at": "2026-10-14T18:09:08.936380"
 }
