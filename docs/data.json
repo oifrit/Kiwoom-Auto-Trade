@@ -5,8 +5,8 @@
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 62073028,
-      "rate": -22.408715,
+      "valuation": 64795293,
+      "rate": -19.00588375,
       "dividend": 878755,
       "rows": [
         {
@@ -16,7 +16,7 @@
           "per_share": 435,
           "confirmed": true,
           "total": 485460,
-          "prft_rt": -31.9
+          "prft_rt": -27.52
         },
         {
           "stk_cd": "486290",
@@ -25,7 +25,7 @@
           "per_share": 134,
           "confirmed": false,
           "total": 312220,
-          "prft_rt": -16.62
+          "prft_rt": -14.03
         },
         {
           "stk_cd": "458730",
@@ -34,7 +34,7 @@
           "per_share": 39,
           "confirmed": false,
           "total": 2925,
-          "prft_rt": 3.83
+          "prft_rt": 4.18
         },
         {
           "stk_cd": "494300",
@@ -43,7 +43,7 @@
           "per_share": 150,
           "confirmed": false,
           "total": 78150,
-          "prft_rt": -5.73
+          "prft_rt": -2.99
         }
       ],
       "orderable_cash": 9593723
@@ -52,8 +52,8 @@
       "key": "pen",
       "label": "PEN",
       "principal": 28000000,
-      "valuation": 29419588,
-      "rate": 5.069957142857143,
+      "valuation": 30160023,
+      "rate": 7.714367857142858,
       "dividend": 455928,
       "rows": [
         {
@@ -63,7 +63,7 @@
           "per_share": 39,
           "confirmed": false,
           "total": 11778,
-          "prft_rt": 4.67
+          "prft_rt": 5.02
         },
         {
           "stk_cd": "494300",
@@ -72,7 +72,7 @@
           "per_share": 150,
           "confirmed": false,
           "total": 444150,
-          "prft_rt": -2.86
+          "prft_rt": -0.03
         }
       ],
       "orderable_cash": 37573
@@ -80,24 +80,24 @@
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 91492616,
-    "rate": -15.284614814814814,
+    "valuation": 94955316,
+    "rate": -12.07841111111111,
     "dividend": 1334683
   },
   "wife": {
     "my": {
       "principal": 25000000,
-      "valuation": 25050175,
-      "rate": 0.20070000000000002,
-      "dividend": 378564
+      "valuation": 25715805,
+      "rate": 2.86322,
+      "dividend": 352314
     },
     "accounts": [
       {
         "key": "isa",
         "label": "ISA",
         "principal": 7000000,
-        "valuation": 7281773,
-        "rate": 4.025328571428571,
+        "valuation": 7506856,
+        "rate": 7.2408,
         "dividend": 107142,
         "rows": [
           {
@@ -107,7 +107,7 @@
             "per_share": 39,
             "confirmed": false,
             "total": 3042,
-            "prft_rt": 2.9565217391304355
+            "prft_rt": 3.3043478260869508
           },
           {
             "stk_cd": "494300",
@@ -116,20 +116,20 @@
             "per_share": 150,
             "confirmed": false,
             "total": 104100,
-            "prft_rt": -6.348862672876921
+            "prft_rt": -3.622240136317778
           }
         ],
         "ok": true,
         "error": null,
-        "orderable_cash": 287363
+        "orderable_cash": 338516
       },
       {
         "key": "pension",
         "label": "PEN",
         "principal": 18000000,
-        "valuation": 17768402,
-        "rate": -1.2866555555555554,
-        "dividend": 271422,
+        "valuation": 18208949,
+        "rate": 1.1608277777777778,
+        "dividend": 245172,
         "rows": [
           {
             "stk_cd": "458730",
@@ -138,23 +138,23 @@
             "per_share": 39,
             "confirmed": false,
             "total": 7722,
-            "prft_rt": 4.676769945907422
+            "prft_rt": 5.030407682211169
           },
           {
             "stk_cd": "494300",
             "name": "코미닥",
-            "qty": 1758,
+            "qty": 1583,
             "per_share": 150,
             "confirmed": false,
-            "total": 263700,
-            "prft_rt": -2.387111303215239
+            "total": 237450,
+            "prft_rt": 0.4548575068145988
           }
         ],
         "ok": true,
         "error": null,
-        "orderable_cash": 44432
+        "orderable_cash": 1559869
       }
     ]
   },
-  "updated_at": "2026-10-27T15:35:05.339285"
+  "updated_at": "2026-10-28T15:35:05.098273"
 }
