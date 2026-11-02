@@ -1,59 +1,59 @@
 {
-  "this_month": "2026-10",
+  "this_month": "2026-11",
   "accounts": [
     {
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 62023673,
-      "rate": -22.47040875,
-      "dividend": 855065,
+      "valuation": 62152453,
+      "rate": -22.30943375,
+      "dividend": 855624,
       "rows": [
         {
           "stk_cd": "480040",
           "name": "에미반",
-          "qty": 1118,
+          "qty": 1119,
           "per_share": 435,
-          "confirmed": true,
-          "total": 486330,
-          "prft_rt": -30.9
+          "confirmed": false,
+          "total": 486765,
+          "prft_rt": -31.38
         },
         {
           "stk_cd": "486290",
           "name": "타미닥",
-          "qty": 2332,
+          "qty": 2333,
           "per_share": 124,
-          "confirmed": true,
-          "total": 289168,
-          "prft_rt": -17.85
+          "confirmed": false,
+          "total": 289292,
+          "prft_rt": -18.09
         },
         {
           "stk_cd": "458730",
           "name": "타미당",
           "qty": 75,
           "per_share": 35,
-          "confirmed": true,
+          "confirmed": false,
           "total": 2625,
-          "prft_rt": 6.46
+          "prft_rt": 6.57
         },
         {
           "stk_cd": "494300",
           "name": "코미닥",
           "qty": 527,
           "per_share": 146,
-          "confirmed": true,
+          "confirmed": false,
           "total": 76942,
-          "prft_rt": -7.18
+          "prft_rt": -7.23
         }
       ],
-      "orderable_cash": 9467618
+      "orderable_cash": 9445618
     },
     {
       "key": "pen",
       "label": "PEN",
       "principal": 28000000,
-      "valuation": 29132543,
-      "rate": 4.044796428571429,
+      "valuation": 29121348,
+      "rate": 4.004814285714286,
       "dividend": 441360,
       "rows": [
         {
@@ -61,18 +61,18 @@
           "name": "타미당",
           "qty": 242,
           "per_share": 35,
-          "confirmed": true,
+          "confirmed": false,
           "total": 8470,
-          "prft_rt": 7.32
+          "prft_rt": 7.43
         },
         {
           "stk_cd": "494300",
           "name": "코미닥",
           "qty": 2965,
           "per_share": 146,
-          "confirmed": true,
+          "confirmed": false,
           "total": 432890,
-          "prft_rt": -4.41
+          "prft_rt": -4.47
         }
       ],
       "orderable_cash": 914223
@@ -80,15 +80,15 @@
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 91156216,
-    "rate": -15.596096296296297,
-    "dividend": 1296425
+    "valuation": 91273801,
+    "rate": -15.487221296296298,
+    "dividend": 1296984
   },
   "wife": {
     "my": {
       "principal": 25000000,
-      "valuation": 24898539,
-      "rate": -0.405844,
+      "valuation": 24938416,
+      "rate": -0.246336,
       "dividend": 383369
     },
     "accounts": [
@@ -96,8 +96,8 @@
         "key": "isa",
         "label": "ISA",
         "principal": 7000000,
-        "valuation": 7262623,
-        "rate": 3.7517571428571426,
+        "valuation": 7309295,
+        "rate": 4.4185,
         "dividend": 109748,
         "rows": [
           {
@@ -105,30 +105,30 @@
             "name": "타미당",
             "qty": 78,
             "per_share": 35,
-            "confirmed": true,
+            "confirmed": false,
             "total": 2730,
-            "prft_rt": 5.565217391304356
+            "prft_rt": 5.669565217391304
           },
           {
             "stk_cd": "494300",
             "name": "코미닥",
             "qty": 733,
             "per_share": 146,
-            "confirmed": true,
+            "confirmed": false,
             "total": 107018,
-            "prft_rt": -7.54719595614114
+            "prft_rt": -7.603024944090331
           }
         ],
         "ok": true,
         "error": null,
-        "orderable_cash": 9746
+        "orderable_cash": 58900
       },
       {
         "key": "pension",
         "label": "PEN",
         "principal": 18000000,
-        "valuation": 17635916,
-        "rate": -2.0226888888888888,
+        "valuation": 17629121,
+        "rate": -2.0604388888888887,
         "dividend": 273621,
         "rows": [
           {
@@ -136,18 +136,18 @@
             "name": "타미당",
             "qty": 159,
             "per_share": 35,
-            "confirmed": true,
+            "confirmed": false,
             "total": 5565,
-            "prft_rt": 7.329065113979927
+            "prft_rt": 7.435156446876778
           },
           {
             "stk_cd": "494300",
             "name": "코미닥",
             "qty": 1836,
             "per_share": 146,
-            "confirmed": true,
+            "confirmed": false,
             "total": 268056,
-            "prft_rt": -3.593302337959059
+            "prft_rt": -3.6515189428274475
           }
         ],
         "ok": true,
@@ -156,5 +156,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-30T15:35:05.768486"
+  "updated_at": "2026-11-02T15:35:08.469263"
 }
