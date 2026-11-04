@@ -5,9 +5,9 @@
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 59469304,
-      "rate": -25.66337,
-      "dividend": 856621,
+      "valuation": 60981349,
+      "rate": -23.77331375,
+      "dividend": 856656,
       "rows": [
         {
           "stk_cd": "480040",
@@ -16,7 +16,7 @@
           "per_share": 435,
           "confirmed": false,
           "total": 487200,
-          "prft_rt": -35.27
+          "prft_rt": -33.22
         },
         {
           "stk_cd": "486290",
@@ -25,16 +25,16 @@
           "per_share": 124,
           "confirmed": false,
           "total": 289416,
-          "prft_rt": -21.45
+          "prft_rt": -19.7
         },
         {
           "stk_cd": "458730",
           "name": "타미당",
-          "qty": 75,
+          "qty": 76,
           "per_share": 35,
           "confirmed": false,
-          "total": 2625,
-          "prft_rt": 5.34
+          "total": 2660,
+          "prft_rt": 5.61
         },
         {
           "stk_cd": "494300",
@@ -43,27 +43,27 @@
           "per_share": 146,
           "confirmed": false,
           "total": 77380,
-          "prft_rt": -10.33
+          "prft_rt": -8.47
         }
       ],
-      "orderable_cash": 9753329
+      "orderable_cash": 9738264
     },
     {
       "key": "pen",
       "label": "PEN",
       "principal": 28000000,
-      "valuation": 28679454,
-      "rate": 2.4266214285714285,
-      "dividend": 457420,
+      "valuation": 29198799,
+      "rate": 4.281425,
+      "dividend": 457840,
       "rows": [
         {
           "stk_cd": "458730",
           "name": "타미당",
-          "qty": 242,
+          "qty": 254,
           "per_share": 35,
           "confirmed": false,
-          "total": 8470,
-          "prft_rt": 6.19
+          "total": 8890,
+          "prft_rt": 6.21
         },
         {
           "stk_cd": "494300",
@@ -72,23 +72,23 @@
           "per_share": 146,
           "confirmed": false,
           "total": 448950,
-          "prft_rt": -7.49
+          "prft_rt": -5.58
         }
       ],
-      "orderable_cash": 465549
+      "orderable_cash": 284619
     }
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 88148758,
-    "rate": -18.38077962962963,
-    "dividend": 1314041
+    "valuation": 90180148,
+    "rate": -16.499862962962965,
+    "dividend": 1314496
   },
   "wife": {
     "my": {
       "principal": 25000000,
-      "valuation": 24514207,
-      "rate": -1.943172,
+      "valuation": 24958192,
+      "rate": -0.167232,
       "dividend": 390669
     },
     "accounts": [
@@ -96,8 +96,8 @@
         "key": "isa",
         "label": "ISA",
         "principal": 7000000,
-        "valuation": 7192363,
-        "rate": 2.748042857142857,
+        "valuation": 7320343,
+        "rate": 4.576328571428571,
         "dividend": 112522,
         "rows": [
           {
@@ -107,7 +107,7 @@
             "per_share": 35,
             "confirmed": false,
             "total": 2730,
-            "prft_rt": 4.452173913043489
+            "prft_rt": 4.800000000000004
           },
           {
             "stk_cd": "494300",
@@ -116,7 +116,7 @@
             "per_share": 146,
             "confirmed": false,
             "total": 109792,
-            "prft_rt": -10.514631529304951
+            "prft_rt": -8.667841560866595
           }
         ],
         "ok": true,
@@ -127,8 +127,8 @@
         "key": "pension",
         "label": "PEN",
         "principal": 18000000,
-        "valuation": 17321844,
-        "rate": -3.767533333333333,
+        "valuation": 17637849,
+        "rate": -2.0119499999999997,
         "dividend": 278147,
         "rows": [
           {
@@ -138,7 +138,7 @@
             "per_share": 35,
             "confirmed": false,
             "total": 5565,
-            "prft_rt": 6.197424229746851
+            "prft_rt": 6.551062006069697
           },
           {
             "stk_cd": "494300",
@@ -147,7 +147,7 @@
             "per_share": 146,
             "confirmed": false,
             "total": 272582,
-            "prft_rt": -6.824533604929428
+            "prft_rt": -4.901587769383875
           }
         ],
         "ok": true,
@@ -156,5 +156,5 @@
       }
     ]
   },
-  "updated_at": "2026-11-04T13:35:21.462834"
+  "updated_at": "2026-11-04T15:35:06.269227"
 }
