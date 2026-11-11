@@ -5,9 +5,9 @@
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 58361619,
-      "rate": -27.04797625,
-      "dividend": 857412,
+      "valuation": 59568504,
+      "rate": -25.53937,
+      "dividend": 858042,
       "rows": [
         {
           "stk_cd": "480040",
@@ -16,7 +16,7 @@
           "per_share": 435,
           "confirmed": false,
           "total": 487200,
-          "prft_rt": -37.56
+          "prft_rt": -34.95
         },
         {
           "stk_cd": "486290",
@@ -25,16 +25,16 @@
           "per_share": 124,
           "confirmed": false,
           "total": 289664,
-          "prft_rt": -20.58
+          "prft_rt": -19.98
         },
         {
           "stk_cd": "458730",
           "name": "타미당",
-          "qty": 78,
+          "qty": 96,
           "per_share": 35,
           "confirmed": false,
-          "total": 2730,
-          "prft_rt": 5.78
+          "total": 3360,
+          "prft_rt": 4.34
         },
         {
           "stk_cd": "494300",
@@ -43,17 +43,17 @@
           "per_share": 146,
           "confirmed": false,
           "total": 77818,
-          "prft_rt": -9.88
+          "prft_rt": -9.6
         }
       ],
-      "orderable_cash": 9780879
+      "orderable_cash": 10000999
     },
     {
       "key": "pen",
       "label": "PEN",
       "principal": 28000000,
-      "valuation": 28812994,
-      "rate": 2.90355,
+      "valuation": 28877319,
+      "rate": 3.1332821428571425,
       "dividend": 461005,
       "rows": [
         {
@@ -63,7 +63,7 @@
           "per_share": 35,
           "confirmed": false,
           "total": 9135,
-          "prft_rt": 6.35
+          "prft_rt": 6.0
         },
         {
           "stk_cd": "494300",
@@ -72,7 +72,7 @@
           "per_share": 146,
           "confirmed": false,
           "total": 451870,
-          "prft_rt": -7.03
+          "prft_rt": -6.75
         }
       ],
       "orderable_cash": 19439
@@ -80,15 +80,15 @@
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 87174613,
-    "rate": -19.28276574074074,
-    "dividend": 1318417
+    "valuation": 88445823,
+    "rate": -18.105719444444446,
+    "dividend": 1319047
   },
   "wife": {
     "my": {
       "principal": 25000000,
-      "valuation": 24635190,
-      "rate": -1.45924,
+      "valuation": 24689690,
+      "rate": -1.2412400000000001,
       "dividend": 392836
     },
     "accounts": [
@@ -96,8 +96,8 @@
         "key": "isa",
         "label": "ISA",
         "principal": 7000000,
-        "valuation": 7232101,
-        "rate": 3.3157285714285716,
+        "valuation": 7247876,
+        "rate": 3.541085714285714,
         "dividend": 114689,
         "rows": [
           {
@@ -107,7 +107,7 @@
             "per_share": 35,
             "confirmed": false,
             "total": 2415,
-            "prft_rt": 4.594208034316027
+            "prft_rt": 4.248213300494275
           },
           {
             "stk_cd": "494300",
@@ -116,7 +116,7 @@
             "per_share": 146,
             "confirmed": false,
             "total": 112274,
-            "prft_rt": -9.896728971863
+            "prft_rt": -9.616208202784115
           }
         ],
         "ok": true,
@@ -127,8 +127,8 @@
         "key": "pension",
         "label": "PEN",
         "principal": 18000000,
-        "valuation": 17403089,
-        "rate": -3.3161722222222223,
+        "valuation": 17441814,
+        "rate": -3.1010333333333335,
         "dividend": 278147,
         "rows": [
           {
@@ -138,7 +138,7 @@
             "per_share": 35,
             "confirmed": false,
             "total": 5565,
-            "prft_rt": 6.9046997823925205
+            "prft_rt": 6.551062006069697
           },
           {
             "stk_cd": "494300",
@@ -147,7 +147,7 @@
             "per_share": 146,
             "confirmed": false,
             "total": 272582,
-            "prft_rt": -6.416636003450071
+            "prft_rt": -6.125280573821956
           }
         ],
         "ok": true,
@@ -156,5 +156,5 @@
       }
     ]
   },
-  "updated_at": "2026-11-11T08:00:18.476683"
+  "updated_at": "2026-11-11T15:35:06.280678"
 }
