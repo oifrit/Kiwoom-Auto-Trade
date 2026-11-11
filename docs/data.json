@@ -5,18 +5,18 @@
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 59568504,
-      "rate": -25.53937,
-      "dividend": 858042,
+      "valuation": 59210154,
+      "rate": -25.9873075,
+      "dividend": 733722,
       "rows": [
         {
           "stk_cd": "480040",
           "name": "에미반",
           "qty": 1120,
-          "per_share": 435,
-          "confirmed": false,
-          "total": 487200,
-          "prft_rt": -34.95
+          "per_share": 324,
+          "confirmed": true,
+          "total": 362880,
+          "prft_rt": -36.73
         },
         {
           "stk_cd": "486290",
@@ -80,9 +80,9 @@
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 88445823,
-    "rate": -18.105719444444446,
-    "dividend": 1319047
+    "valuation": 88087473,
+    "rate": -18.437525,
+    "dividend": 1194727
   },
   "wife": {
     "my": {
@@ -156,5 +156,5 @@
       }
     ]
   },
-  "updated_at": "2026-11-11T15:35:06.280678"
+  "updated_at": "2026-11-12T08:00:18.003567"
 }
