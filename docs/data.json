@@ -5,8 +5,8 @@
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 57591874,
-      "rate": -28.0101575,
+      "valuation": 57815974,
+      "rate": -27.7300325,
       "dividend": 737152,
       "rows": [
         {
@@ -16,7 +16,7 @@
           "per_share": 324,
           "confirmed": true,
           "total": 363852,
-          "prft_rt": -40.55
+          "prft_rt": -40.33
         },
         {
           "stk_cd": "486290",
@@ -25,7 +25,7 @@
           "per_share": 124,
           "confirmed": false,
           "total": 290160,
-          "prft_rt": -21.95
+          "prft_rt": -21.66
         },
         {
           "stk_cd": "458730",
@@ -34,7 +34,7 @@
           "per_share": 35,
           "confirmed": false,
           "total": 3570,
-          "prft_rt": 0.74
+          "prft_rt": 0.78
         },
         {
           "stk_cd": "494300",
@@ -43,7 +43,7 @@
           "per_share": 146,
           "confirmed": false,
           "total": 79570,
-          "prft_rt": -11.27
+          "prft_rt": -11.16
         }
       ],
       "orderable_cash": 10539729
@@ -52,8 +52,8 @@
       "key": "pen",
       "label": "PEN",
       "principal": 28000000,
-      "valuation": 28234954,
-      "rate": 0.8391214285714287,
+      "valuation": 28267229,
+      "rate": 0.9543892857142857,
       "dividend": 461297,
       "rows": [
         {
@@ -63,7 +63,7 @@
           "per_share": 35,
           "confirmed": false,
           "total": 9135,
-          "prft_rt": 2.87
+          "prft_rt": 2.9
         },
         {
           "stk_cd": "494300",
@@ -72,7 +72,7 @@
           "per_share": 146,
           "confirmed": false,
           "total": 452162,
-          "prft_rt": -8.71
+          "prft_rt": -8.59
         }
       ],
       "orderable_cash": 3519
@@ -80,15 +80,15 @@
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 85826828,
-    "rate": -20.530714814814814,
+    "valuation": 86083203,
+    "rate": -20.293330555555556,
     "dividend": 1198449
   },
   "wife": {
     "my": {
       "principal": 25000000,
-      "valuation": 24140035,
-      "rate": -3.4398600000000004,
+      "valuation": 24167545,
+      "rate": -3.32982,
       "dividend": 392982
     },
     "accounts": [
@@ -96,8 +96,8 @@
         "key": "isa",
         "label": "ISA",
         "principal": 7000000,
-        "valuation": 7086366,
-        "rate": 1.2338,
+        "valuation": 7094411,
+        "rate": 1.3487285714285713,
         "dividend": 114835,
         "rows": [
           {
@@ -107,7 +107,7 @@
             "per_share": 35,
             "confirmed": false,
             "total": 2415,
-            "prft_rt": 1.1688601694806788
+            "prft_rt": 1.2034596428628586
           },
           {
             "stk_cd": "494300",
@@ -116,7 +116,7 @@
             "per_share": 146,
             "confirmed": false,
             "total": 112420,
-            "prft_rt": -11.511473034111786
+            "prft_rt": -11.399249157173442
           }
         ],
         "ok": true,
@@ -127,8 +127,8 @@
         "key": "pension",
         "label": "PEN",
         "principal": 18000000,
-        "valuation": 17053669,
-        "rate": -5.2573944444444445,
+        "valuation": 17073134,
+        "rate": -5.1492555555555555,
         "dividend": 278147,
         "rows": [
           {
@@ -138,7 +138,7 @@
             "per_share": 35,
             "confirmed": false,
             "total": 5565,
-            "prft_rt": 3.403685796796485
+            "prft_rt": 3.439049574428754
           },
           {
             "stk_cd": "494300",
@@ -147,7 +147,7 @@
             "per_share": 146,
             "confirmed": false,
             "total": 272582,
-            "prft_rt": -8.10649749529312
+            "prft_rt": -7.989955323441878
           }
         ],
         "ok": true,
@@ -156,5 +156,5 @@
       }
     ]
   },
-  "updated_at": "2026-11-19T15:35:06.920120"
+  "updated_at": "2026-11-20T08:00:16.608189"
 }
