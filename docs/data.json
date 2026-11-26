@@ -5,8 +5,8 @@
       "key": "isa",
       "label": "ISA",
       "principal": 80000000,
-      "valuation": 53543944,
-      "rate": -33.07007,
+      "valuation": 54255014,
+      "rate": -32.1812325,
       "dividend": 739845,
       "rows": [
         {
@@ -16,7 +16,7 @@
           "per_share": 324,
           "confirmed": true,
           "total": 364824,
-          "prft_rt": -48.72
+          "prft_rt": -47.47
         },
         {
           "stk_cd": "486290",
@@ -25,7 +25,7 @@
           "per_share": 124,
           "confirmed": false,
           "total": 290532,
-          "prft_rt": -25.93
+          "prft_rt": -24.99
         },
         {
           "stk_cd": "458730",
@@ -34,7 +34,7 @@
           "per_share": 35,
           "confirmed": false,
           "total": 3605,
-          "prft_rt": 2.33
+          "prft_rt": 3.43
         },
         {
           "stk_cd": "494300",
@@ -43,17 +43,17 @@
           "per_share": 146,
           "confirmed": false,
           "total": 80884,
-          "prft_rt": -16.8
+          "prft_rt": -15.39
         }
       ],
-      "orderable_cash": 10739399
+      "orderable_cash": 11076319
     },
     {
       "key": "pen",
       "label": "PEN",
       "principal": 28000000,
-      "valuation": 26715744,
-      "rate": -4.586628571428571,
+      "valuation": 27144569,
+      "rate": -3.0551107142857146,
       "dividend": 461297,
       "rows": [
         {
@@ -63,7 +63,7 @@
           "per_share": 35,
           "confirmed": false,
           "total": 9135,
-          "prft_rt": 4.49
+          "prft_rt": 5.61
         },
         {
           "stk_cd": "494300",
@@ -72,7 +72,7 @@
           "per_share": 146,
           "confirmed": false,
           "total": 452162,
-          "prft_rt": -14.61
+          "prft_rt": -13.17
         }
       ],
       "orderable_cash": 3519
@@ -80,15 +80,15 @@
   ],
   "my": {
     "principal": 108000000,
-    "valuation": 80259688,
-    "rate": -25.685474074074072,
+    "valuation": 81399583,
+    "rate": -24.630015740740742,
     "dividend": 1201142
   },
   "wife": {
     "my": {
       "principal": 25000000,
-      "valuation": 22972474,
-      "rate": -8.110104,
+      "valuation": 23339829,
+      "rate": -6.640683999999999,
       "dividend": 394442
     },
     "accounts": [
@@ -96,8 +96,8 @@
         "key": "isa",
         "label": "ISA",
         "principal": 7000000,
-        "valuation": 6834405,
-        "rate": -2.365642857142857,
+        "valuation": 6942945,
+        "rate": -0.8150714285714286,
         "dividend": 116295,
         "rows": [
           {
@@ -107,7 +107,7 @@
             "per_share": 35,
             "confirmed": false,
             "total": 2415,
-            "prft_rt": 2.7604359450607463
+            "prft_rt": 3.8676190932903642
           },
           {
             "stk_cd": "494300",
@@ -116,19 +116,19 @@
             "per_share": 146,
             "confirmed": false,
             "total": 113880,
-            "prft_rt": -17.05160812750276
+            "prft_rt": -15.645703180511273
           }
         ],
         "ok": true,
         "error": null,
-        "orderable_cash": 57258
+        "orderable_cash": 57255
       },
       {
         "key": "pension",
         "label": "PEN",
         "principal": 18000000,
-        "valuation": 16138069,
-        "rate": -10.344061111111111,
+        "valuation": 16396884,
+        "rate": -8.9062,
         "dividend": 278147,
         "rows": [
           {
@@ -138,7 +138,7 @@
             "per_share": 35,
             "confirmed": false,
             "total": 5565,
-            "prft_rt": 5.030419567881506
+            "prft_rt": 6.162060452114582
           },
           {
             "stk_cd": "494300",
@@ -147,7 +147,7 @@
             "per_share": 146,
             "confirmed": false,
             "total": 272582,
-            "prft_rt": -14.05014825970663
+            "prft_rt": -12.593371111566064
           }
         ],
         "ok": true,
@@ -156,5 +156,5 @@
       }
     ]
   },
-  "updated_at": "2026-11-26T08:00:17.566667"
+  "updated_at": "2026-11-26T15:35:05.637767"
 }
